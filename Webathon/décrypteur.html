@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <!-- owl carousel -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+   <!--fonts   -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+   
+   <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>décrypteur</title>
+  <link rel="icon" href="img/L.jpg">
+  
+  <!--JavaScript Code for Moving an image-->
+  <script type="text/javascript">
+
+    function leftArrowPressed() {
+    var element = document.getElementById("image1");
+    element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+
+    function rightArrowPressed() {
+    var element = document.getElementById("image1");
+    element.style.left = parseInt(element.style.left) + 5 + 'px';
+
+    }
+
+    function upArrowPressed() {
+    var element = document.getElementById("image1");
+    element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+
+    function downArrowPressed() {
+    var element = document.getElementById("image1");
+    element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+            leftArrowPressed();
+            break;
+            case 39:
+            rightArrowPressed();
+            break;
+            case 38:
+            upArrowPressed();
+            break;
+            case 40:
+            downArrowPressed();
+            break;
+            }
+        };
+
+function docReady()
+{
+  
+  window.addEventListener('keydown', moveSelection);
+}
+
+</script>
+	
+  </head>
+  <body onload="docReady()" onkeydown="" onkeyup="">
+        <div class="main-container contact-color">
+                <div class="inside-container ">
+                        <div class="row row-spc">
+                          <div class="col-md-12  col-disp">
+                           <div class="icon-scp" >
+                              <div class="left-side">
+                                <a class="link-head " href="https://chat.whatsapp.com/KyglQUwgYhX7ZhM4oZi0Hn"><i class="fab fa-whatsapp"></i> WhatsApp</a> <span>|</span>
+                                <a class="link-head " href="#"><i class="far fa-clock"></i> Learn 24*7 </a> <span>|</span>
+                                <a  class="link-head " href="mailto:noplanetbee.planb@gmail.com"><i class="far fa-envelope "> </i> noplanetbee.planb@gmail.com </a>
+                              </div>
+                            </div>
+                            <div class="ml-auto icon-scp" >
+                              <i class="fab fa-facebook-f "></i>
+                              <i class="fab fa-twitter icon-scp"></i>
+                              <i class="fab fa-linkedin-in icon-scp"></i>
+                              <i class="fab fa-tumblr icon-scp"></i>
+                              <i class="fab fa-vimeo-v icon-scp"></i>
+                              <i class="fab fa-pinterest-p icon-scp"></i>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+            </div> 
+            
+          <!--menu-->
+          <div class="main-container nav-bg-color">
+            <div class="inside-container nav-contain">
+              <nav class="navbar navbar-expand-lg navbar-light ">
+               <a href="décrypteur.html"> <img src="img/L2.jpg" class="img-fluid" alt="LOGO"> </a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav nav-list ml-auto">
+                      <a class="menu" href="décrypteur.html">HOME</a>
+                      <a class="menu" href="#">ABOUT US</a>
+                      <a class="menu" href="#">SERVICES</a>
+                      
+                      <a class="menu  last-spc" href="#">CONTACT</a>
+                        <span class="menu last-spc color-line"> | </span>
+                       
+                      <a class="menu icon-color  last-spc" href="#"><i class="fas fa-search"></i></a>  
+      
+                </div>
+               </div>
+              </nav>
+              </div>
+           </div> 
+           <div>
+            <img id="image1" src="img/P.jpg" style="position:absolute;left:0; top:0;" height="50" width="50">
+          <center><img src="img/maze.png"> </center>
+           </div>
+<div><button class="runIdeBtn" onclick="redirect( )">CODE on IDE</button></div>
+<script>
+  function redirect() {
+    location.replace("https://ide.geeksforgeeks.org/index.php")
+  }
+  </script>
+  <div><br> <br> <br> <br>
+    <img src="img/LOGO.png"> <center> <img src="img/L1.jpg"> </center> <img src="img/LOGO.png"> </div>
+
+
+           
